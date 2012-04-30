@@ -1,0 +1,159 @@
+# [name]
+# var1 = val1;
+# var2 = val2;
+# ・・・
+# のように記入
+#
+# 座標系は右手系
+# 上がy軸正の方向
+# 右がx軸正の方向
+# 手前がz軸正の方向
+
+[UpdateReady]
+
+dt1 = 1.0;
+cameraPosition1X = 0.0;
+cameraPosition1Y = 1.0;
+cameraPosition1Z = 5.0;
+
+dt2 = 1.0;
+cameraPosition2X = 0.0;
+cameraPosition2Y = 1.0;
+cameraPosition2Z = 5.0;
+
+dt3 = 0.5;
+cameraPosition3StartX = 0.0;
+cameraPosition3StartY = 0.66;
+cameraPosition3StartZ = 5.0;
+cameraPosition3EndX = 0.0;
+cameraPosition3EndY = 2.0;
+cameraPosition3EndZ = 15.0;
+
+[UpdatePause]
+v = 2000.0;
+A = 10.0;
+w = -6.0;
+
+[Camera]
+
+defaultCameraPositionX = 0.0;
+defaultCameraPositionY = 2.0;
+defaultCameraPositionZ = 15.0;
+minX = -10.0;
+maxX = 10.0;
+minY = -5.0;
+maxY = 10.0;
+minZ = 5.0;
+maxZ = 50.0;
+
+cameraTargetX = 0.0;
+cameraTargetY = 0.0;
+cameraTargetZ = 0.0;
+
+cameraUpVectorX = 0.0;
+cameraUpVectorY = 1.0;
+cameraUpVectorZ = 0.0;
+
+fieldOfView = 45.0;
+nearPlaneDistanse = 0.1;
+farPlaneDistance = 1000.0;
+
+[Character]
+
+gageV = 1.0;
+MAX_GAGE = 100;
+
+# 速度は秒速
+# キャラクターは1.0*1.0*1.0（参考までに）
+
+# Animation.Walk
+maxWalkSpeed = 1.0;
+walkPeekTime = 1.0;
+
+# Animation.Run
+maxRunSpeed = 1.0;
+runPeekTime = 1.0;
+
+# Animation.Jump
+jumpPeekTime = 1.5;
+jumpPeekHeight = 5.0;
+jumpTime1 = 0.5;
+MAX_JUMP = 2;
+
+# 1Pの設定
+1P_emissiveColorX = 1.0;
+1P_emissiveColorY = 0.0;
+1P_emissiveColorZ = 0.0;
+1P_recVisibleX = -5.5;
+1P_recVisibleY = 0.0;
+1P_recVisibleW = 1.0;
+1P_recVisibleH = 1.0;
+
+# 2Pの設定
+2P_emissiveColorX = 0.0;
+2P_emissiveColorY = 0.0;
+2P_emissiveColorZ = 1.0;
+2P_recVisibleX = 4.5;
+2P_recVisibleY = 0.0;
+2P_recVisibleW = 1.0;
+2P_recVisibleH = 1.0;
+
+# Cubeの設定
+ModelCube_name = ModelCube;
+ModelCube_originalSizeX = 2.0;
+ModelCube_originalSizeY = 2.0;
+ModelCube_originalSizeZ = 2.0;
+ModelCube_recVisibleX = -0.5;
+ModelCube_recVisibleY = 0.0;
+ModelCube_recVisibleW = 1.0;
+ModelCube_recVisibleH = 1.0;
+ModelCube_depth = 1.0;
+ModelCube_recCollisionX = -0.5;
+ModelCube_recCollisionY = 0.0;
+ModelCube_recCollisionW = 1.0;
+ModelCube_recCollisionH = 1.0;
+ModelCube_rotationX = 0.0;
+ModelCube_rotationY = 0.0;
+ModelCube_rotationZ = 0.0;
+
+# Sphereの設定
+ModelSphere_name = ModelSphere;
+ModelSphere_originalSizeX = 2.0;
+ModelSphere_originalSizeY = 2.0;
+ModelSphere_originalSizeZ = 2.0;
+ModelSphere_recVisibleX = -0.5;
+ModelSphere_recVisibleY = 0.0;
+ModelSphere_recVisibleW = 1.0;
+ModelSphere_recVisibleH = 1.0;
+ModelSphere_depth = 1.0;
+ModelSphere_recCollisionX = -0.5;
+ModelSphere_recCollisionY = 0.0;
+ModelSphere_recCollisionW = 1.0;
+ModelSphere_recCollisionH = 1.0;
+ModelSphere_rotationX = 0.0;
+ModelSphere_rotationY = 0.0;
+ModelSphere_rotationZ = 0.0;
+
+[Stage1]
+# Stage1はモデルは一個だけ
+Count = 1;
+Model1_name = Stage1_Model1;
+Model1_originalSizeX = 200.0;
+Model1_originalSizeY = 200.0;
+Model1_originalSizeZ = 100.0;
+Model1_recVisibleX = -10.0;
+Model1_recVisibleY = -20.0;
+Model1_recVisibleW = 20.0;
+Model1_recVisibleH = 20.0;
+Model1_depth = 20.0;
+Model1_recCollisionX = -10.0;
+Model1_recCollisionY = -20.0;
+Model1_recCollisionW = 20.0;
+Model1_recCollisionH = 20.0;
+Model1_rotationX = 0.0;
+Model1_rotationY = 0.0;
+Model1_rotationZ = 0.0;
+Model1_emissiveColorX = 1.0;
+Model1_emissiveColorY = 1.0;
+Model1_emissiveColorZ = 1.0;
+
